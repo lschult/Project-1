@@ -1,60 +1,273 @@
-.box{
-    display: inline;
-    margin: 50px;
-}
+@import url("styles/card.css");
 
-body {
-    background: #444 ;
-    color: #ffffff;
-}
+* {
+    box-sizing: border-box;
+    }
 
-.typography {
-    text-align: center;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.1em;
-    margin: auto;
-    line-height: 1.4em;
-}
 
-.container {
+    .open-button {
+        background-color: #1565C0;
+        color: black;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        position: fixed;
+        top: 61px;
+        right: 28px;
+        width: 150px;
+        font-size: 110%;
+        font-weight: 200;
+      }
+      
+         
+      @media only screen and (max-width: 705px) {
+        .open-button {
+           position: static;
+        }
+            }
+
+
+      /* The popup form - hidden by default */
+      .form-popup {
+        display: none;
+        position: fixed;
+        top: 60;
+        right: 28px;
+        border: 3px solid black;
+        z-index: 9;
+      }
+      
+      /* Add styles to the form container */
+      .form-container {
+        max-width: 300px;
+        padding: 10px;
+        background-color: #1565C0;
+      }
+      
+      /* Full-width input fields */
+      .form-container input[type=text], .form-container input[type=password] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        border: none;
+        background: #f1f1f1;
+      }
+      
+      /* When the inputs get focus, do something */
+      .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+        background-color: #ddd;
+        outline: none;
+      }
+      
+      /* Set a style for the submit/login button */
+      .form-container .btn {
+        background-color: #04AA6D;
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom:10px;
+        opacity: 0.8;
+      }
+      
+      /* Add a red background color to the cancel button */
+      .form-container .cancel {
+        background-color: red;
+      }
+      
+      /* Add some hover effects to buttons */
+      .form-container .btn:hover, .open-button:hover {
+        opacity: 1;
+      }
+
+
+
+    body {
+        background-color: #90CAF9;
+        margin: 0;
+        height: 100vh;
+        width: 100vw;
+        overflow-x: hidden;
+        
+          display: grid;
+          width: 100vw;
+          height: 100vh;
+          padding: 0;
+          gap: 0;
+          grid-auto-rows: auto 1fr;
+          grid-template-areas:
+              'header header header'
+              'main main main'
+              'footer footer footer';
+        
+      }
+
+
+      header {
+		grid-area: header;
+         display: grid;
+         grid-template-areas: 
+         /** "topleft topright"**/
+         "top top"
+         "bottom bottom";
+         
+	}
+
+
+    .box1 {
+        grid-area: top;
+        text-align: center;
+        
+    }
+
+  /**  .box2 {
+        grid-area: topright;
+        text-align: center;
+        
+    } **/
+
+    .box2 {
+        grid-area: bottom;
+        text-align: center;
+        text-decoration: underline;
+    }
+
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #1565C0;
+        position: relative;
+        top: 0;
+        width: 100%;
+      }
+      
+
+      li {
+        float: left;
+      }
+      
+
+      li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+
+      li a:hover:not(.active) {
+        background-color: #111;
+      }
+      
+
+      .active {
+        background-color: #04AA6D;
+      }
+
+
+
+	main {
+		/*align-self: center;
+            
+             */
+		grid-area: main;
+   
+        background-color: #1565C0;
+        
     display: grid;
-    width: 80vw;
-    height: 100vw;
-    margin: auto;
-    grid-template-columns: 50vw 50vw;
-    grid-template-rows: 60vw 50vw 60vw;
+    padding: 25px;
     grid-template-areas: 
     "top top"
     "middleLeft middleRight"
     "bottom bottom";
     border: 2px solid black;
     justify-content: center;
-    padding: 10%;
-
+    grid-gap: 15px;
 }
 
-.box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 3px solid blue;
-    padding: 15px;
-}
 
-#one {
+    .card1 {
     grid-area: top;
 }
 
-#two {
+
+.card2 {
     grid-area: middleLeft;
 }
 
-#three {
+
+.card3 {
     grid-area: middleRight;
 }
 
-#four {
+
+.card4 {
     grid-area: bottom;
 }
+  
+
+	footer {
+		grid-area: footer;
+        margin: 10px;
+	}
+   
+    
+    .photos-container {
+    	border: 1px solid black;
+    	/*flex-grow: 1;
+        min-height: 100px;
+        	width: 50%;
+            */
+    }
+    p {
+      	/*flex-grow: 1;
+        width: 50%;
+        min-height: 100px;
+        */
+        max-width: 100%; 
+        max-height: 100px; 
+        overflow: auto
+        	
+    }
+    
+   
+    
+    @media only screen and (max-width: 600px) {
+      body {
+      grid-auto-rows: minmax(min-content, auto);
+        	grid-template-areas:
+		'header'
+		'main'
+        'main'
+         'main'
+		'footer';
+      }
+      
+      	main {
+        	padding: 10px;
+		}
+    }
+    
+
+     @media only screen and (max-width: 480px) {
+     
+     main {
+	padding: 10px;
+    grid-template-areas: 
+    "top"
+    "middleLeft"
+    "middleRight"
+    "bottom";
+    grid-gap: 10px;
+
+
+	}
+   
+
+    }
+    

@@ -8,96 +8,195 @@
   </head>
 
   <body>
-    <header class="main header">
-      <nav class="main nav">
-        <div>Subscribe</div>
-        <div>Contact</div>
-      </nav>
-      <h1>Schult Photography Blog</h1>
-    </header>
-
-    <div class="container">
-      <div class="box" id="one">
-        <h2>Iceland</h2>
-        <p class="typography">
-          For some reason I have always been drawn to cold places. Perhaps it is
-          the unique atmophere which is created by dark and gloomy landscapes,
-          or perhaps it is the cold air I breathe, which makes me feel sharp and
-          on the edge at all times. I visited Iceland in late winter, and was
-          immersed by its vast spectrum of mountains, waterfalls and natural
-          formations.
-        </p>
-        <p>
-          <a href="blog.html">Continue reading</a>
-        </p>
-      </div>
-
-      <div class="box" id="two">
-        <h2>South Africa</h2>
-        <p class="typography">
-          Wonderful people, buzzing biodiversity, mouth-watering cuisine. South
-          Africa provides everything your heart wants. Theres is so much to see
-          and do, which is why I have already returned, and will do so again in
-          the future. During my trips, I recorded my experiences of this
-          wonderful place to share with others.
-        </p>
-        <p>
-          <a href="blog.html">Continue reading</a>
-        </p>
-      </div>
-
-      <div class="box" id="three">
-        <h2>Norway</h2>
-        <p class="typography">
-          Norway is one of the most visually stunning location with landscpaes
-          boasting a wide range of spectacular characteristics. I had the
-          pleasure to visit this place, and I captured my experience through
-          text and photoraphy.
-        </p>
-        <p>
-          <a href="blog.html">Continue reading</a>
-        </p>
-      </div>
-      <div class="box" id="four">
-        <h2>Alaska</h2>
-        <p class="typography">
-          A staggering number of countries are affected by increasing
-          overpopulation. When visiting such places, you can feel overwhelmed
-          and drowned by the sheer incomprehesible densitive of people
-          surrounging yourself, at times it can be hard to keep a clear head.
-          Alaska is not one of those place, in contrary, it feels like you're
-          alone when travelling through this vast country with its untouched
-          nature. Instead, you are immersed by it's inhabitants such as moose or
-          bears. A pristine location, that allows you to think of life in a
-          different way.
-        </p>
-        <p>
-          <a href="blog.html">Continue reading</a>
-        </p>
-      </div>
-    </div>
-
-    <footer>
-      <div>
-        <h5>Schult Photography Blog</h5>
+    <header>
+      <div class="box1">
         <ul>
+          <li><a class="active" href="main.html">Home</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="blog.html">Blog</a></li>
           <li>
-            <a href="https://facebook.com" target="_blank">
-              <img src="Images/facebook.jpg" height="40" width="40" />
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com" target="_blank">
-              <img src="Images/twitter.jpg" height="40" width="40" />
-            </a>
-          </li>
-          <li>
-            <a href="https://linkedin.com" target="_blank">
-              <img src="Images/linkedIn.jpg" height="40" width="40" />
-            </a>
+            <button class="open-button" onclick="openForm()">Subscribe</button>
           </li>
         </ul>
+
+        <div class="form-popup" id="myForm">
+          <form action="/action_page.php" class="form-container">
+            <h3><u>Enter details</u></h3>
+
+            <label for="email"><b>Full name</b></label>
+            <input
+              type="text"
+              placeholder="Enter Email"
+              name="email"
+              required
+            />
+
+            <label for="psw"><b>Email</b></label>
+            <input
+              type="password"
+              placeholder="Enter Password"
+              name="psw"
+              required
+            />
+
+            <button type="submit" class="btn">Subscribe</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">
+              Close
+            </button>
+          </form>
+        </div>
+
+        <script>
+          function openForm() {
+            document.getElementById("myForm").style.display = "block";
+          }
+
+          function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+          }
+        </script>
+        <!-- <button type="button">Subscribe</button> -->
       </div>
+
+      <!--   <div class="box2">
+
+
+      <button type="button">Contact</button> 
+
+      </div> -->
+
+      <div class="box2">
+        <h1>Schult Photography Blog</h1>
+      </div>
+    </header>
+
+    <main>
+      <article class="card card1">
+        <h2>Iceland</h2>
+        <div class="card-content">
+          <p>
+            I have always been drawn to cold places. Perhaps it is the unique
+            atmophere which is created by dark and gloomy landscapes, or perhaps
+            it is the cold air I breathe, which makes me feel sharp and on the
+            edge at all times. I visited <u><strong>Iceland</strong></u> in late
+            winter, and was immersed by its vast spectrum of mountains,
+            waterfalls and natural formations. There is so much to see, and
+            everything thrives by its uniquness and raw beauty.
+          </p>
+          <section>
+            A fitting <u>quote</u> I stumbled upon once reads as follows:
+            <blockquote cite="https://www.thetravellingtom.com/iceland-quotes">
+              “The problem with driving around Iceland is that you’re basically
+              confronted by a new soul-enriching, breath-taking, life-affirming
+              natural sight every five goddam minutes. It’s totally exhausting.”
+            </blockquote>
+          </section>
+          <p>
+            <a href="blog.html"><em>Continue reading</em></a>
+          </p>
+        </div>
+        <div class="photos-container">
+          <figure>
+            <img src="Images/iceland1.jpg" alt="Iceland" style="width: 100%" />
+            <figcaption>Landscapes of Iceland</figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <article class="card card2">
+        <h2>South Africa</h2>
+        <div class="card-content">
+          <p>
+            Wonderful people, buzzing biodiversity, mouth-watering cuisine.
+            <u><strong>South Africa</strong></u> provides everything your heart
+            wants. Theres is so much to see and do, ranging from spectacular
+            hikes (such as the famous table mountain), botanical gardens and
+            whale watching, to endulging in the vast spectrum of local dishes
+            found in extravagant food festivals.
+          </p>
+          <p>
+            <a href="blog.html"><em>Continue reading</em></a>
+          </p>
+          <div class="photos-container">
+            <figure>
+              <img
+                src="Images/southafrica1.jpg"
+                alt="Cape Town, South Africa"
+                style="width: 100%"
+              />
+              <figcaption>
+                View of table mountain. Cape Town, South Africa
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </article>
+
+      <article class="card card3">
+        <h2>Alaska</h2>
+        <div class="card-content">
+          <p>
+            A staggering number of countries are affected by increasing
+            overpopulation. When visiting such places, you can feel overwhelmed
+            and drowned by the sheer incomprehesible densitive of people
+            surrounging yourself, at times it can be hard to keep a clear head.
+            <u><strong>Alaska</strong></u> is not one of those place, in
+            contrary, it feels like you're alone when travelling through this
+            vast country with its untouched nature. Instead, you are immersed by
+            it's inhabitants such as moose or bears. A pristine location, that
+            allows you to think of life in a different way.
+          </p>
+          <p>
+            <a href="blog.html"><em>Continue reading</em></a>
+          </p>
+          <div class="photos-container">
+            <figure>
+              <img src="Images/alaska5.jpg" alt="Alaska" style="width: 100%" />
+              <figcaption>Alaska from above</figcaption>
+            </figure>
+          </div>
+        </div>
+      </article>
+
+      <article class="card card4">
+        <h2>Norway</h2>
+        <div class="card-content">
+          <p>
+            <u><strong>Norway</strong></u> is one of the most visually stunning
+            locations with landscpaes boasting a wide range of spectacular
+            characteristics. I had the pleasure to visit this place, and I was
+            hoping for the right conditions to encounter the majestic, beautiful
+            aurora borealis. I should not be dissapointed, we had clear skies
+            for most of the trip and I was immersed by intense displays of
+            colour bands, dancing and wiggling along the nihght skies. Surely, a
+            spectacle I will never forget.
+          </p>
+          <p>
+            <a href="blog.html"><em>Continue reading</em></a>
+          </p>
+          <div class="photos-container">
+            <figure>
+              <img src="Images/norway 3.jpg" alt="Norway" style="width: 100%" />
+              <figcaption>
+                One of nature's most amazing wonders: The aurora borealis.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer>
+      <a href="https://facebook.com" target="_blank">
+        <img src="Images/facebook.jpg" height="40" width="40" />
+      </a>
+
+      <a href="https://twitter.com" target="_blank">
+        <img src="Images/twitter.jpg" height="40" width="40" />
+      </a>
+      <a href="https://linkedin.com" target="_blank">
+        <img src="Images/linkedIn.jpg" height="40" width="40" />
+      </a>
     </footer>
   </body>
 </html>

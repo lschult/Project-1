@@ -4,60 +4,174 @@
     <meta charset="utf-8" />
     <title>Schult Photography Blog</title>
     <meta name="description" content="Project" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styleblog.css" />
   </head>
 
   <body>
     <header>
-      <a href="main.html">Home</a>
+        <div class="box1">
+            <ul class="nav">
+                <li><a href="main.html">Home</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a class="active" href="blog.html">Blog</a></li>
+                <li><button class="open-button" onclick="openForm()">Subscribe</button>
+                </li>
+              </ul>
+      
+              <div class="form-popup" id="myForm">
+                <form action="/action_page.php" class="form-container">
+                  <h3><u>Enter details</u></h3>
+      
+                  <label for="email"><b>Full name</b></label>
+                  <input
+                    type="text"
+                    placeholder="Enter Email"
+                    name="email"
+                    required
+                  />
+      
+                  <label for="psw"><b>Email</b></label>
+                  <input
+                    type="password"
+                    placeholder="Enter Password"
+                    name="psw"
+                    required
+                  />
+      
+                  <button type="submit" class="btn">Subscribe</button>
+                  <button type="button" class="btn cancel" onclick="closeForm()">
+                    Close
+                  </button>
+                </form>
+              </div>
+      
+              <script>
+                function openForm() {
+                  document.getElementById("myForm").style.display = "block";
+                }
+      
+                function closeForm() {
+                  document.getElementById("myForm").style.display = "none";
+                }
+              </script>
+
+
+      </div>
+      <div class="box2">
+      <h1>Schult Photography Blog - Iceland</h1>
+      </div>
     </header>
 
-    <div>
-      <h2>Norway</h2>
-      <p>
-        Norway is one of the most visually stunning location with landscpaes
-        boasting a wide range of spectacular characteristics. I had the pleasure
-        to visit this place, and I captured my experience through text and
-        photoraphy.
-      </p>
-    </div>
+    <main>
+        <article class="card card1">
+          <h2 class="h1card1">Iceland</h2>
+          <div class="card-content">
+            <p>
+           <u><strong>Iceland</strong></u> certainly is a very unique location. It is defined by waterfalls, glaciers
+           and volcanoes, and overal rough landscapes. Especially in winter, when strong winds are
+           cutting through your face, leaving your body behind with a numb feeling, yet emotionally
+           charged by the wonderful scenes infront of your eyes. At times, it feels like you are at 
+           the edge of the world, far away from everything and everyone.
+          </p>        
 
-    <div>
-      <h4>About Me</h4>
-      <ul>
-        <li>Lukas Schult</li>
-        <li>BSc Graduate</li>
-        <li>Schultphotography</li>
-        <li>
-          Born in Germany, been living abroad in various countries (USA, UAE,
-          UK, Netherlands). Very passionate about photography and travelling,
-          capturing moments and sharing them with others. Finished my degree in
-          Marine Boiology, wide range of interests (football, coffee, foreign
-          cuisine, movies, music, animals).
-        </li>
-        <li></li>
-      </ul>
-    </div>
+       <div class="photos-container">
+            <figure>
+              <img src="Images/iceland2.jpg" alt="Iceland" style="width: 100%;">
+              <figcaption> Landscapes of Iceland</figcaption>
+            </figure>
+       </div>
+       <div>
+        <br>
+        Related Blogs: 
+        <a href="main.html">South Africa,</a> <a href="main.html">Alaska,</a>
+        <a href="main.html">Norway</a>
+       </div>
+        </article>
 
-    <div>
-      <h5>Follow Me</h5>
-      <ul>
-        <li>
-          <a href="https://facebook.com" target="_blank">
+    </main>
+
+    <aside>
+        <article class="card card2">
+            <h2>About me</h2>
+            <div class="card-content">
+              <p>
+                
+                <div class="avatar"></div>
+
+                <ul>
+                    <li>Lukas Schult</li>
+                    <li>BSc Marine Biology</li>
+                    <li><a href="https://schultphotography.com" target="_blank">Schultphotography.com</a></li>
+                    <li>
+                      Born in Germany, been living abroad in various countries (USA, UAE,
+                      UK, Netherlands). Very passionate about photography and travelling,
+                      capturing moments and sharing them with others. Finished my degree
+                      in Marine Boiology, wide range of interests (football, coffee,
+                      foreign cuisine, movies, music, animals).
+                    </li>
+                    <li></li>
+                  </ul>
+            </p>         
+            </div>
+    </aside>
+
+
+  
+    <footer>
+         <h3>Follow Me:</h3>
+            <a href="https://facebook.com" target="_blank">
             <img src="Images/facebook.jpg" height="40" width="40" />
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com" target="_blank">
-            <img src="Images/twitter.jpg" height="40" width="40" />
-          </a>
-        </li>
-        <li>
-          <a href="https://linkedin.com" target="_blank">
-            <img src="Images/linkedIn.jpg" height="40" width="40" />
-          </a>
-        </li>
-      </ul>
-    </div>
+            </a>
+                
+                <a href="https://twitter.com" target="_blank">
+                  <img src="Images/twitter.jpg" height="40" width="40" />
+                </a>
+                <a href="https://linkedin.com" target="_blank">
+                  <img src="Images/linkedIn.jpg" height="40" width="40" />
+                </a>
+      </footer>
+      
   </body>
 </html>
+
+
+
+
+ <!--    <div class="responsive">
+            <div class="gallery">
+              <a>
+                <img src="Images/iceland2.jpg" alt="iceland1" width="600" height="400">
+              </a>
+              <div class="desc">iceland1</div>
+            </div>
+          </div>
+          
+          
+          <div class="responsive">
+            <div class="gallery">
+              <a>
+                <img src="Images/iceland3.jpg" alt="iceland2" width="600" height="400">
+              </a>
+              <div class="desc">iceland2</div>
+            </div>
+          </div>
+          
+          <div class="responsive">
+            <div class="gallery">
+              <a>
+                <img src="Images/iceland4.jpg" alt="iceland3" width="600" height="400">
+              </a>
+              <div class="desc">iceland3</div>
+            </div>
+          </div>
+          
+          <div class="responsive">
+            <div class="gallery">
+              <a>
+                <img src="Images/iceland5.jpg" alt="iceland4" width="600" height="400">
+              </a>
+              <div class="desc">iceland4</div>
+            </div>
+          </div>
+
+          <div class="clearfix"></div> -->

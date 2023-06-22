@@ -1,24 +1,23 @@
-
-
 .card {
-		
-    border: 1px solid grey;
-    background: #BBDEFB;
-    border-radius: 5px;
-    padding: 10px;
-    
-    display: flex;
-    justify-content: start;
-    flex-wrap: wrap;
-    align-items: stretch;
+  border: 1px solid grey;
+  background: #bbdefb;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  align-items: stretch;
+  transition: 0.5s;
 }
 
+.card:hover {
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 2, 0.6);
+}
 
 .card-content {
-    
-    display: flex;
-    justify-content: start;
-    flex-wrap: wrap;
-    align-items: stretch;
-    flex-direction: row-reverse;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  align-items: stretch;
+  flex-direction: row-reverse;
 }

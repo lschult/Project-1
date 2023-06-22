@@ -9,12 +9,12 @@
 
   <body>
     <header>
-      <div class="box1">
-        <ul>
-          <li><a class="active" href="main.html">Home</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li>
+      <div class="box-nav">
+        <ul class="nav">
+          <li class="li"><a class="active" href="main.html">Home</a></li>
+          <li class="li"><a href="#contact">Contact</a></li>
+          <li class="li"><a href="blog.html">Blog</a></li>
+          <li class="li">
             <button class="open-button" onclick="openForm()">Subscribe</button>
           </li>
         </ul>
@@ -23,19 +23,19 @@
           <form action="/action_page.php" class="form-container">
             <h3><u>Enter details</u></h3>
 
-            <label for="email"><b>Full name</b></label>
+            <label for="name"><b>Full name</b></label>
+            <input
+              type="text"
+              placeholder="Enter Full Name"
+              name="name"
+              required
+            />
+
+            <label for="email"><b>Email</b></label>
             <input
               type="text"
               placeholder="Enter Email"
               name="email"
-              required
-            />
-
-            <label for="psw"><b>Email</b></label>
-            <input
-              type="password"
-              placeholder="Enter Password"
-              name="psw"
               required
             />
 
@@ -55,9 +55,9 @@
             document.getElementById("myForm").style.display = "none";
           }
         </script>
+
         <!-- <button type="button">Subscribe</button> -->
       </div>
-
       <!--   <div class="box2">
 
 
@@ -65,13 +65,13 @@
 
       </div> -->
 
-      <div class="box2">
+      <div class="box-title">
         <h1>Schult Photography Blog</h1>
       </div>
     </header>
 
     <main>
-      <article class="card card1">
+      <article class="card card-iceland">
         <h2>Iceland</h2>
         <div class="card-content">
           <p>
@@ -104,7 +104,7 @@
         </div>
       </article>
 
-      <article class="card card2">
+      <article class="card card-southafrica">
         <h2>South Africa</h2>
         <div class="card-content">
           <p>
@@ -133,7 +133,7 @@
         </div>
       </article>
 
-      <article class="card card3">
+      <article class="card card-alaska">
         <h2>Alaska</h2>
         <div class="card-content">
           <p>
@@ -160,7 +160,7 @@
         </div>
       </article>
 
-      <article class="card card4">
+      <article class="card card-norway">
         <h2>Norway</h2>
         <div class="card-content">
           <p>

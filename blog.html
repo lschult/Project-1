@@ -9,12 +9,12 @@
 
   <body>
     <header>
-        <div class="box1">
+        <div class="box-nav">
             <ul class="nav">
-                <li><a href="main.html">Home</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a class="active" href="blog.html">Blog</a></li>
-                <li><button class="open-button" onclick="openForm()">Subscribe</button>
+                <li class="li"><a href="main.html">Home</a></li>
+                <li class="li"><a href="#contact">Contact</a></li>
+                <li class="li"><a class="active" href="blog.html">Blog</a></li>
+                <li class="li"><button class="open-button" onclick="openForm()">Subscribe</button>
                 </li>
               </ul>
       
@@ -22,19 +22,19 @@
                 <form action="/action_page.php" class="form-container">
                   <h3><u>Enter details</u></h3>
       
-                  <label for="email"><b>Full name</b></label>
+                  <label for="name">Full name</label>
+                  <input
+                    type="text"
+                    placeholder="Enter Full Name"
+                    name="name"
+                    required
+                  />
+      
+                  <label for="email">Email</label>
                   <input
                     type="text"
                     placeholder="Enter Email"
                     name="email"
-                    required
-                  />
-      
-                  <label for="psw"><b>Email</b></label>
-                  <input
-                    type="password"
-                    placeholder="Enter Password"
-                    name="psw"
                     required
                   />
       
@@ -57,13 +57,13 @@
 
 
       </div>
-      <div class="box2">
+      <div class="box-title">
       <h1>Schult Photography Blog - Iceland</h1>
       </div>
     </header>
 
     <main>
-        <article class="card card1">
+        <article class="card card-iceland">
           <h2 class="h1card1">Iceland</h2>
           <div class="card-content">
             <p>
@@ -81,7 +81,7 @@
            sense of sharpness and energy, and I felt my mind was as clear as ever.<br> Those are the moments I live for, something
            I don't experience during my day to day life working my regular job in a bigger city.
           </p>        
-
+          </div>
        <div class="photos-container">
             <figure>
               <img src="Images/iceland2.jpg" alt="Iceland" style="width: 100%;">
@@ -99,14 +99,14 @@
     </main>
 
     <aside>
-        <article class="card card2">
+        <article class="card card-aboutme">
             <h2>About me</h2>
             <div class="card-content">
               <p>
                 
                 <div class="avatar"></div>
 
-                <ul>
+                <ul class="about-me-list">
                     <li>Lukas Schult</li>
                     <li>BSc Marine Biology</li>
                     <li><a href="https://schultphotography.com" target="_blank">Schultphotography.com</a></li>
@@ -117,7 +117,6 @@
                       in Marine Boiology, wide range of interests (football, coffee,
                       foreign cuisine, movies, music, animals).
                     </li>
-                    <li></li>
                   </ul>
             </p>         
             </div>

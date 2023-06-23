@@ -1,3 +1,5 @@
+/* Source of code for popup form: W3Schools (https://www.w3schools.com/howto/howto_js_popup_form.asp) */
+
 .open-button {
   background-color: #1565c0;
   color: black;
@@ -64,7 +66,7 @@
 }
 
 .form-container .cancel {
-  background-color: red;
+  background-color: gray;
 }
 
 .form-container .btn:hover,

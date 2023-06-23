@@ -3,10 +3,10 @@
 @import url("styles/body.css");
 @import url("styles/header.css");
 @import url("styles/nav.css");
-
-* {
-  box-sizing: border-box;
-}
+@import url("styles/main.css");
+@import url("styles/photos.css");
+@import url("styles/footer.css");
+@import url("styles/universal.css");
 
 body {
   grid-template-areas:
@@ -16,14 +16,7 @@ body {
 }
 
 main {
-  grid-area: main;
-  background-color: #1565c0;
-  display: grid;
-  justify-content: center;
-  padding: 25px;
-  border: 2px solid black;
   grid-gap: 25px;
-
   grid-template-areas:
     "top top"
     "middleLeft middleRight"
@@ -44,19 +37,6 @@ main {
 
 .card-norway {
   grid-area: bottom;
-}
-
-footer {
-  grid-area: footer;
-  margin: 10px;
-}
-
-.photos-container {
-  border: 1px solid black;
-  /*flex-grow: 1;
-        min-height: 100px;
-        	width: 50%;
-            */
 }
 
 p {

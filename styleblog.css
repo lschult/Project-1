@@ -3,14 +3,16 @@
 @import url("styles/body.css");
 @import url("styles/header.css");
 @import url("styles/nav.css");
+@import url("styles/main.css");
+@import url("styles/photos.css");
+@import url("styles/footer.css");
+@import url("styles/universal.css");
 
-* {
-  box-sizing: border-box;
-}
 
-@media only screen and (max-width: 840px) {
+@media only screen and (max-width: 1005px) {
   .open-button {
     position: static;
+    font-size: 100%;
   }
 }
 
@@ -21,13 +23,10 @@ body {
     "footer footer footer footer footer footer footer";
 }
 
-main {
-  grid-area: main;
-  background-color: #1565c0;
-  justify-content: center;
-  padding: 25px;
-  border: 2px solid black;
+.photos-container {
+    size: 10%;
 }
+
 
 aside {
   align-self: center;
@@ -37,14 +36,6 @@ aside {
   border: 2px solid black;
 }
 
-footer {
-  grid-area: footer;
-  margin: 10px;
-}
-
-.photos-container {
-  border: 1px solid black;
-}
 
 p {
   /*flex-grow: 1;
@@ -77,19 +68,9 @@ p {
       "footer";
   }
 
-  main {
-    padding: 15px;
-  }
-
-
 @media only screen and (max-width: 480px) {
   main {
     padding: 10px;
-
     grid-gap: 10px;
   }
-}
-
-.h1card1 {
-  margin: 0%;
 }

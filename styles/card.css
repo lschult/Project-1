@@ -21,3 +21,8 @@
   align-items: stretch;
   flex-direction: row-reverse;
 }
+
+.card-header {
+  margin: 0%;
+  padding: 5px;
+}

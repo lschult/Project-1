@@ -9,10 +9,17 @@
 @import url("styles/universal.css");
 
 body {
+  display: grid;
+  gap: 0;
+  grid-auto-rows: auto 1fr;
   grid-template-areas:
     "header header header"
     "main main main"
     "footer footer footer";
+}
+
+.form-popup {
+  right: 25px;
 }
 
 main {
@@ -37,16 +44,6 @@ main {
 
 .card-norway {
   grid-area: bottom;
-}
-
-p {
-  /*flex-grow: 1;
-        width: 50%;
-        min-height: 100px;
-        */
-  max-width: 100%;
-  max-height: 100px;
-  overflow: auto;
 }
 
 @media only screen and (max-width: 600px) {

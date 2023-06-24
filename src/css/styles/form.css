@@ -2,7 +2,7 @@
 
 .open-button {
   background-color: #1565c0;
-  color: black;
+  color: white;
   padding: 16px 20px;
   border: none;
   cursor: pointer;
@@ -29,7 +29,7 @@
   display: none;
   position: fixed;
   top: 60;
-  right: 28px;
+  right: 20px;
   border: 2px solid black;
 }
 
@@ -41,7 +41,7 @@
 
 .form-container input[type="text"],
 .form-container input[type="password"] {
-  width: 100%;
+  width: 90%;
   padding: 15px;
   margin: 5px 0 22px 0;
   border: none;

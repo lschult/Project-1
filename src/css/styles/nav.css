@@ -1,12 +1,17 @@
 .nav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+  display: flex;
+  justify-content: start;
+  align-items: center;
   background-color: #1565c0;
-  position: relative;
-  top: 0;
   width: 100%;
+}
+
+.navigation-button {
+  padding: 1rem 1.25rem;
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-align: center;
 }
 
 .li {

@@ -6,20 +6,18 @@
     <meta charset="utf-8" />
     <title>Schult Photography Blog</title>
     <meta name="description" content="Project" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/index.css" />
   </head>
 
   <body>
     <header>
-      <div class="box-nav">
-        <ul class="nav">
-          <li class="li"><a class="active" href="main.html">Home</a></li>
-          <li class="li"><a href="#contact">Contact</a></li>
-          <li class="li"><a href="blog.html">Blog</a></li>
-          <li class="li">
-            <button class="open-button" onclick="openForm()">Subscribe</button>
-          </li>
-        </ul>
+      <div>
+        <nav class="nav">
+          <a class="navigation-button active" href="index.html">Home</a>
+          <a class="navigation-button" href="#contact">Contact</a>
+          <a class="navigation-button" href="blog.html">Blog</a>
+          <button class="open-button" onclick="openForm()">Subscribe</button>
+        </nav>
 
         <!--Source of code for popup form: W3Schools (https://www.w3schools.com/howto/howto_js_popup_form.asp)-->
 
@@ -27,7 +25,7 @@
           <form action="/action_page.php" class="form-container">
             <h3><u>Enter details</u></h3>
 
-            <label for="name"><b>Full name</b></label>
+            <label for="name">Full name</label>
             <input
               type="text"
               placeholder="Enter Full Name"
@@ -35,7 +33,7 @@
               required
             />
 
-            <label for="email"><b>Email</b></label>
+            <label for="email">Email</label>
             <input
               type="text"
               placeholder="Enter Email"
@@ -49,20 +47,7 @@
             </button>
           </form>
         </div>
-        <script>
-          function openForm() {
-            document.getElementById("myForm").style.display = "block";
-          }
-
-          function closeForm() {
-            document.getElementById("myForm").style.display = "none";
-          }
-        </script>
-        <!-- <button type="button">Subscribe</button> -->
       </div>
-      <!--   <div class="box2">
-      <button type="button">Contact</button>
-      </div> -->
 
       <div class="box-title">
         <h1>Schult Photography Blog</h1>
@@ -97,7 +82,7 @@
         </div>
         <div class="photos-container">
           <figure>
-            <img src="Images/iceland1.jpg" alt="Iceland" style="width: 100%" />
+            <img src="images/iceland1.jpg" alt="Iceland" style="width: 100%" />
             <figcaption>Landscapes of Iceland</figcaption>
           </figure>
         </div>
@@ -120,7 +105,7 @@
           <div class="photos-container">
             <figure>
               <img
-                src="Images/southafrica1.jpg"
+                src="images/southafrica1.jpg"
                 alt="Cape Town, South Africa"
                 style="width: 100%"
               />
@@ -152,7 +137,7 @@
           </p>
           <div class="photos-container">
             <figure>
-              <img src="Images/alaska5.jpg" alt="Alaska" style="width: 100%" />
+              <img src="images/alaska5.jpg" alt="Alaska" style="width: 100%" />
               <figcaption>Alaska from above</figcaption>
             </figure>
           </div>
@@ -173,11 +158,11 @@
             spectacle I will never forget.
           </p>
           <p>
-            <a href="blog.html"><em>Continue reading</em></a>
+            <a href="pages/blog.html"><em>Continue reading</em></a>
           </p>
           <div class="photos-container">
             <figure>
-              <img src="Images/norway 3.jpg" alt="Norway" style="width: 100%" />
+              <img src="images/norway 3.jpg" alt="Norway" style="width: 100%" />
               <figcaption>
                 One of nature's most amazing wonders: The aurora borealis.
               </figcaption>
@@ -200,4 +185,14 @@
       </a>
     </footer>
   </body>
+
+  <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+  </script>
 </html>

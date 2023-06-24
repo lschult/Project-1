@@ -6,19 +6,19 @@
     <meta charset="utf-8" />
     <title>Schult Photography Blog</title>
     <meta name="description" content="Project" />
-    <link rel="stylesheet" href="styleblog.css" />
+    <link rel="stylesheet" href="css/pages/blog.css" />
   </head>
 
   <body>
     <header>
-        <div class="box-nav">
-            <ul class="nav">
-                <li class="li"><a href="main.html">Home</a></li>
-                <li class="li"><a href="#contact">Contact</a></li>
-                <li class="li"><a class="active" href="blog.html">Blog</a></li>
-                <li class="li"><button class="open-button" onclick="openForm()">Subscribe</button>
-                </li>
-              </ul>
+        <nav class="nav">
+                <a class="navigation-button" href="index.html">Home</a>
+                <a class="navigation-button" href="#contact">Contact</a>
+                <a class="navigation-button active" href="blog.html">Blog</a>
+                <button class="open-button" onclick="openForm()">Subscribe</button>
+        </nav>
+
+
 
         <!--Source of code for popup form: W3Schools (https://www.w3schools.com/howto/howto_js_popup_form.asp)-->
 
@@ -49,17 +49,6 @@
                 </form>
               </div>
 
-              <script>
-                function openForm() {
-                  document.getElementById("myForm").style.display = "block";
-                }
-
-                function closeForm() {
-                  document.getElementById("myForm").style.display = "none";
-                }
-              </script>
-
-
       </div>
       <div class="box-title">
       <h1>Schult Photography Blog - Iceland</h1>
@@ -88,15 +77,15 @@
           </div>
        <div class="photos-container">
             <figure>
-              <img src="Images/iceland2.jpg" alt="Iceland" style="width: 100%;">
+              <img src="images/iceland2.jpg" alt="Iceland" style="width: 100%;">
               <figcaption> Landscapes of Iceland</figcaption>
             </figure>
        </div>
        <div>
         <br>
         Related Blogs:
-        <a href="main.html">South Africa,</a> <a href="main.html">Alaska,</a>
-        <a href="main.html">Norway</a>
+        <a href="index.html">South Africa,</a> <a href="index.html">Alaska,</a>
+        <a href="index.html">Norway</a>
        </div>
         </article>
 
@@ -131,58 +120,26 @@
     <footer>
          <h3>Follow Me:</h3>
             <a href="https://facebook.com" target="_blank">
-            <img src="Images/facebook.jpg" height="40" width="40" />
+            <img src="images/facebook.jpg" height="40" width="40" />
             </a>
 
                 <a href="https://twitter.com" target="_blank">
-                  <img src="Images/twitter.jpg" height="40" width="40" />
+                  <img src="images/twitter.jpg" height="40" width="40" />
                 </a>
                 <a href="https://linkedin.com" target="_blank">
-                  <img src="Images/linkedIn.jpg" height="40" width="40" />
+                  <img src="images/linkedIn.jpg" height="40" width="40" />
                 </a>
       </footer>
 
   </body>
+  <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+  </script>
+
 </html>
-
-
-
-
- <!--    <div class="responsive">
-            <div class="gallery">
-              <a>
-                <img src="Images/iceland2.jpg" alt="iceland1" width="600" height="400">
-              </a>
-              <div class="desc">iceland1</div>
-            </div>
-          </div>
-
-
-          <div class="responsive">
-            <div class="gallery">
-              <a>
-                <img src="Images/iceland3.jpg" alt="iceland2" width="600" height="400">
-              </a>
-              <div class="desc">iceland2</div>
-            </div>
-          </div>
-
-          <div class="responsive">
-            <div class="gallery">
-              <a>
-                <img src="Images/iceland4.jpg" alt="iceland3" width="600" height="400">
-              </a>
-              <div class="desc">iceland3</div>
-            </div>
-          </div>
-
-          <div class="responsive">
-            <div class="gallery">
-              <a>
-                <img src="Images/iceland5.jpg" alt="iceland4" width="600" height="400">
-              </a>
-              <div class="desc">iceland4</div>
-            </div>
-          </div>
-
-          <div class="clearfix"></div> -->

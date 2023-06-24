@@ -1,14 +1,9 @@
 header {
   grid-area: header;
-  display: grid;
-  grid-template-areas:
-    "top top"
-    "bottom bottom";
 }
 
 .box-nav {
   grid-area: top;
-  text-align: center;
 }
 
 .box-title {

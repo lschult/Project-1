@@ -73,3 +73,15 @@
 .open-button:hover {
   opacity: 1;
 }
+
+label {
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+}
+
+h3 {
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+}

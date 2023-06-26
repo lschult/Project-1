@@ -9,5 +9,4 @@ header {
 .box-title {
   grid-area: bottom;
   text-align: center;
-  text-decoration: underline;
 }

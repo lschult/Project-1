@@ -6,7 +6,7 @@
 @import url("styles/main.css");
 @import url("styles/photos.css");
 @import url("styles/footer.css");
-@import url("styles/universal.css");
+@import url("utilities/universal.css");
 
 body {
   display: grid;
